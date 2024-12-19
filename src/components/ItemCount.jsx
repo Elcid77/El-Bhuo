@@ -3,11 +3,11 @@ import Button from 'react-bootstrap/Button';
 import { cartContext } from '../context/cartContext';
 
 function ItemCount({ detail }) {
-  const [count, setCount] = useState(1); // Inicializar en 1 por usabilidad
+  const [count, setCount] = useState(1); 
   const { addToCart } = useContext(cartContext);
 
   const handleAdd = () => setCount((prev) => prev + 1);
-  const handleSub = () => setCount((prev) => (prev > 1 ? prev - 1 : prev)); // Evita negativos
+  const handleSub = () => setCount((prev) => (prev > 1 ? prev - 1 : prev)); 
   const handleAddToCart = () => addToCart({ ...detail, qty: count });
 
   return (

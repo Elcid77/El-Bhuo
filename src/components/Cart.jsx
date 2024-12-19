@@ -37,7 +37,7 @@ function Cart() {
 
   return (
     <div className="d-flex flex-column flex-lg-row">
-      {/* Lista de productos en el carrito */}
+      
       <div className="w-100 w-lg-50 p-4 bg-light shadow-sm rounded">
         <h3 className="text-warning text-center mb-4">Carrito de Compras</h3>
         <ListGroup>
@@ -61,7 +61,7 @@ function Cart() {
                 <Button
                   variant="danger"
                   size="sm"
-                  onClick={() => removeFromCart(prod.id)} // Botón para eliminar
+                  onClick={() => removeFromCart(prod.id)} 
                 >
                   Eliminar
                 </Button>
@@ -74,7 +74,7 @@ function Cart() {
         </div>
       </div>
 
-      {/* Formulario de compra */}
+      
       <div className="w-100 w-lg-50 p-4 mt-4 mt-lg-0">
         <h3 className="text-warning text-center mb-4">Detalles de Compra</h3>
         <Form onSubmit={handleSubmit}>
