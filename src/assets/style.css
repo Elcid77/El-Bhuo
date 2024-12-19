@@ -1,0 +1,90 @@
+/* src/assets/style.css */
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    overflow-x: hidden;
+}
+
+.container {
+    margin-top: 7rem; /* Ajusta el valor según sea necesario */
+   
+}
+
+
+.navbar {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    padding: 10px 20px;
+    background-color: #343a40; /* Cambia el fondo de la navbar */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Sombra para un diseño elevado */
+}
+
+.navbar-brand {
+    font-weight: bold;
+    color: #fff !important; /* Color blanco para el logo */
+}
+
+.navbar-nav .nav-item .nav-link {
+    color: #d1d1d1; /* Color de los links */
+    margin-right: 15px;
+    transition: color 0.3s ease; /* Transición suave */
+}
+
+.navbar-nav .nav-item .nav-link:hover {
+    color: #f8f9fa; /* Color al pasar el cursor */
+}
+
+.dropdown-menu {
+    background-color: #495057; /* Fondo del menú desplegable */
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
+}
+
+.dropdown-item {
+    color: #fff;
+    padding: 10px 15px;
+}
+
+.dropdown-item:hover {
+    background-color: #343a40;
+    color: #f8f9fa;
+}
+
+.cart-container {
+    margin-left: auto;
+}
+
+.badge {
+    font-size: 0.75rem;
+    background-color: #dc3545; /* Color rojo del badge */
+}
+
+/* Media Queries */
+@media (min-width: 1280px) {
+    .container {
+        max-width: 1280px;
+    }
+}
+
+@media (min-width: 1024px) and (max-width: 1279px) {
+    .container {
+        max-width: 1024px;
+    }
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        text-align: center;
+    }
+
+    .navbar-nav {
+        flex-direction: column;
+    }
+}

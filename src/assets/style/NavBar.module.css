@@ -1,0 +1,21 @@
+.navbar {
+    padding-top: 5px; /* Reduce el espacio superior */
+    padding-bottom: 5px; /* Reduce el espacio inferior */
+  }
+  
+  .brand {
+    font-size: 1.8rem; /* Ajusta el tamaño del título */
+    font-weight: bold;
+    transform: translateY(-5px); /* Mueve el título hacia arriba */
+  }
+  
+  .nav-links {
+    display: flex;
+    gap: 15px; /* Espaciado entre enlaces */
+    transform: translateY(-5px); /* Mueve los enlaces hacia arriba */
+  }
+  
+  .cart-widget {
+    transform: translateY(-5px); /* Mueve el carrito hacia arriba */
+  }
+  
